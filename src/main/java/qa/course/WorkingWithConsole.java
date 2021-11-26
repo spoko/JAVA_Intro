@@ -4,10 +4,25 @@ import java.util.Scanner;
 
 public class WorkingWithConsole
 {
-
+    String email = "Ibraim2.0@gmail.com";
     public static void main(String[] args)
     {
-        leapYearChecker(1900);
+        String firstInput;
+        String SecondInput;
+
+        Scanner input = new Scanner(System.in);
+
+        firstInput = input.nextLine();
+        SecondInput = input.nextLine();
+        input.close();
+
+
+        if (firstInput.equals(SecondInput)){
+            System.out.println("The stings are equal!!");
+        }
+        else {
+            System.out.println("We can not compare the two words as they are different.");
+        }
     }
 
     public static void compare(int a, int b){
