@@ -3,6 +3,11 @@ package encapsulation;
 public class Product {
     private String name;
     private double cost;
+    private int barcode;
+
+    public int getBarcode() {
+        return barcode;
+    }
 
     public String getName() {
         return name;
@@ -28,8 +33,13 @@ public class Product {
         }
     }
 
-    public Product(String name, double cost) {
+    protected Product(String name, double cost) {
         setName(name);
         setCost(cost);
+        setBarcode(); //possible to be accessed because it is in the same class - private
+    }
+
+    private void setBarcode(){
+        barcode = 34235345;
     }
 }
