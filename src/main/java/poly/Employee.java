@@ -11,6 +11,7 @@ public abstract class Employee {
         setStartDate(startDate);
         setDepartment(department);
         setSalary(salary);
+        sdasdfas;
     }
 
     public String getDepartment() {
