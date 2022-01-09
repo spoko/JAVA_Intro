@@ -10,7 +10,6 @@ public class Test {
         employees.add(qa1);
         DeveloperEmp dev1 = new DeveloperEmp("Petar", "WED", 2500);
         employees.add(dev1);
-        dfghdfghjdfg;
 
         qa1.giveFeedback();
         dev1.giveFeedback();
