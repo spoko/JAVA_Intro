@@ -20,6 +20,7 @@ public class FileReader {
             }
         }catch (FileNotFoundException e){
             System.out.println(e.getMessage());
+            System.out.println(e.getCause());
             //logic for logging usually here using the object e
         }
         catch (IOException e){
